@@ -1,0 +1,6 @@
+Data/*
+train_list.txt
+val_list.txt
+jsut*
+Checkpoint
+**/__pycache__
