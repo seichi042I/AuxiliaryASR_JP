@@ -19,7 +19,7 @@ find "$source_dir" -type f -name "*.wav" | while read -r filename; do
 done
 
 transcript_list=$(find -name "*transcript*.txt" | sort)
-rm train_list.txt
+[ -e "train_list.txt" ] && rm train_list.txt
 for ts in $transcript_list;
 do
     for line in $(cat $ts);
